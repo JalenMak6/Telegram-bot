@@ -4,8 +4,8 @@ import logging
 from telegram import Update, ForceReply
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackContext
 
-API_KEY = '79LEDAQZYWAS78X2'
-token = '5013583990:AAHCh4ggSae1bVdXK2BWtG1ItWZye0TeR4I'
+API_KEY = 'API'
+token = 'TOKEN'
 
 updater = Updater ( token )
 
