@@ -2,15 +2,10 @@ FROM python:3.9
   
 WORKDIR /app
 
-ADD main.py .
+ADD main.py stock_function.py test.py .
 
-ADD stock_function.py .
-
-ADD test.py .
-
-RUN pip install --upgrade pip
-
-RUN python -m pip install --upgrade pip
+RUN pip install --upgrade pip \
+   && python -m pip install --upgrade pip
 
 COPY requirements.txt requirements.txt
 
